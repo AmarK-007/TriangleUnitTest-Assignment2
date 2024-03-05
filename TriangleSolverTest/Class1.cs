@@ -65,5 +65,69 @@ namespace TriangleSolverTest {
         }
     }
 
+    public class ScaleneTriangleTest {
+        ///	Five (5) tests for a valid scalene triangle
+
+        [Test]
+        public void AnalyzeTriangle_Input30and40and50_ReturnsScaleneTriangle() {
+            //Arrange
+            int sideA = 30;
+            int sideB = 40;
+            int sideC = 50;
+            string expectedResult = "Scalene triangle";
+            //Act
+            string result = TriangleSolver.Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+            //Assert
+            Assert.AreEqual(expectedResult, result);
+        }
+        [Test]
+        public void AnalyzeTriangle_Input40and30and50_ReturnsScaleneTriangle() {
+            //Arrange
+            int sideA = 40;
+            int sideB = 30;
+            int sideC = 50;
+            string expectedResult = "Scalene triangle";
+            //Act
+            string result = TriangleSolver.Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+            //Assert
+            Assert.AreEqual(expectedResult, result);
+        }
+        [Test]
+        public void AnalyzeTriangle_Input40and50and30_ReturnsScaleneTriangle() {
+            //Arrange
+            int sideA = 40;
+            int sideB = 50;
+            int sideC = 30;
+            string expectedResult = "Scalene triangle";
+            //Act
+            string result = TriangleSolver.Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+            //Assert
+            Assert.AreEqual(expectedResult, result);
+        }
+        [Test]
+        public void AnalyzeTriangle_Input50and30and40_ReturnsScaleneTriangle() {
+            //Arrange
+            int sideA = 50;
+            int sideB = 30;
+            int sideC = 40;
+            string expectedResult = "Scalene triangle";
+            //Act
+            string result = TriangleSolver.Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+            //Assert
+            Assert.AreEqual(expectedResult, result);
+        }
+        [Test]
+        public void AnalyzeTriangle_Input50and40and30_ReturnsScaleneTriangle() {
+            //Arrange
+            int sideA = 50;
+            int sideB = 40;
+            int sideC = 30;
+            string expectedResult = "Scalene triangle";
+            //Act
+            string result = TriangleSolver.Triangle.AnalyzeTriangle(sideA, sideB, sideC);
+            //Assert
+            Assert.AreEqual(expectedResult, result);
+        }
+    }
 
 }
