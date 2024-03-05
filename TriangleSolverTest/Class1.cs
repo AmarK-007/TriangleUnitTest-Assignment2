@@ -34,7 +34,7 @@ namespace TriangleSolverTest {
         
         ///	Three (3) tests for a valid isosceles triangle
         [Test]
-        public void AnalyzeTriangle_Input30and30and40_ReturnsIsoscelesTriangle_SideA() {
+        public void AnalyzeTriangle_Input30and30and40_ReturnsIsoscelesTriangle() {
             //Arrange
             int sideA = 40;
             int sideB = 30;
@@ -52,7 +52,7 @@ namespace TriangleSolverTest {
             Assert.AreEqual(expectedResult, result);
         }
         [Test]
-        public void AnalyzeTriangle_Input30and40and30_ReturnsIsoscelesTriangle_SideB() {
+        public void AnalyzeTriangle_Input30and40and30_ReturnsIsoscelesTriangle() {
             //Arrange
             int sideA = 30;
             int sideB = 40;
@@ -70,7 +70,7 @@ namespace TriangleSolverTest {
             Assert.AreEqual(expectedResult, result);
         }
         [Test]
-        public void AnalyzeTriangle_Input40and30and30_ReturnsIsoscelesTriangle_SideC() {
+        public void AnalyzeTriangle_Input40and30and30_ReturnsIsoscelesTriangle() {
             //Arrange
             int sideA = 30;
             int sideB = 30;
@@ -191,7 +191,7 @@ namespace TriangleSolverTest {
         ///	Three (3) tests for verifying a zero length for one or more sides
 
         [Test]
-        public void AnalyzeTriangle_Input0and30and30_ReturnsInvalidTriangle_SideA() {
+        public void AnalyzeTriangle_Input0and30and30_ReturnsInvalidTriangle() {
             //Arrange
             int sideA = 0;
             int sideB = 30;
@@ -210,7 +210,7 @@ namespace TriangleSolverTest {
         }
 
         [Test]
-        public void AnalyzeTriangle_Input30and0and30_ReturnsInvalidTriangle_SideB() {
+        public void AnalyzeTriangle_Input30and0and30_ReturnsInvalidTriangle() {
             //Arrange
             int sideA = 30;
             int sideB = 0;
@@ -229,7 +229,7 @@ namespace TriangleSolverTest {
         }
 
         [Test]
-        public void AnalyzeTriangle_Input30and30and0_ReturnsInvalidTriangle_SideC() {
+        public void AnalyzeTriangle_Input30and30and0_ReturnsInvalidTriangle() {
             //Arrange
             int sideA = 30;
             int sideB = 30;
